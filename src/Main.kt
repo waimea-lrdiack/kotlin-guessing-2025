@@ -9,7 +9,7 @@ fun main() {
     println("The game that involves no skill.")
     println()
 
-    var playerName = getString("Enter your name:")
+    var playerName = getString("Enter your name: ")
     println("Nice to meet you $playerName")
 
 
@@ -26,7 +26,7 @@ fun main() {
     while (true) {
         // Ask the user for a guess
         print("Enter your guess: ")
-        val guess = readLine()?.toIntOrNull()
+        var guess = getInt("Enter your guess: ")
 
         // check if user is correct or not
         if (guess == null) {
